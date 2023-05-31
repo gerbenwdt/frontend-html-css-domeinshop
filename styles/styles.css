@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800&display=swap');
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -9,41 +10,193 @@ Table of Contents:
         3.4 Faq
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
-
-
+/*Voorzie jouw CSS-bestand van een complete CSS-reset;*/
+/*(grijs #899CA0 en donkergroen #1C2B32)*/
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
 
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
-
+body{
+    font-family: 'Poppins',Arial, sans-serif;
+}
+input, button{
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+}
+h1{
+    font-size: 100px;
+    font-weight: 700;
+}
+p{
+    font-size: 14px;
+    font-weight: 400;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
 
-
 /*///////////// 3.1 Header /////////////*/
-
-
+header{
+    max-width: 1000px;
+    margin: auto;
+}
+.header-section{
+    /*background-color: red;*/
+    color: #1C2B32;
+    text-align: center;
+    /*max-width: 1000px;*/
+    /*margin: 0 auto;*/
+    padding: 80px 0 350px;
+    background-image: url("/assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    /*padding-bottom: 1000px;*/
+}
+.header-section form{
+    margin-top: 30px;
+}
+p{
+    /*margin: 0 0 30px 0;*/
+}
+.header-section input, .header-section button{
+    height: 60px;
+    border: 2px solid #1C2B32;
+}
+.header-section input{
+    width: 300px;
+    border-radius: 30px 0 0 30px;
+    padding-left: 30px;
+    background-color: transparent;
+}
+.header-section ::placeholder{
+    color: #1C2B32;
+}
+.header-section button{
+    width: 200px;
+    margin-left: -5px;
+    border-radius: 0 30px 30px 0;
+    color: #FFF;
+    background-color: #1C2B32;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
-
-
+main{
+    max-width: 1000px;
+    margin: auto;
+}
+h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 50px 0 50px 0;
+}
+.testimonial-text{
+    font-size: 12px;
+    padding: 20px 50px 50px 100px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 5px lightgrey,
+    0 10px 20px 5px lightgrey;
+    margin-block: 20px;
+    margin: 0 0 50px 0;
+}
+.quote{
+    position: relative;
+    width: 20px;
+    left: -30px;
+    top: 30px;
+}
+.avatar{
+    width: 44px;
+    height: 44px;
+    vertical-align: center;
+    margin: 20px 0 0 0;
+}
+.author{
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+    font-size: 12px;
+    font-style: italic;
+    display: inline;
+}
 /*///////////// 3.3 Support /////////////*/
 
-
+h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+}
+.support p{
+    font-size: 12px;
+}
+a{
+    color: #899CA0;
+    text-decoration: underline;
+}
+a:hover{
+    text-decoration: none;
+}
+#contact{
+    height: 60px;
+    padding: 0 25px;
+    border-radius: 30px;
+    color: #FFF;
+    background-color: #1C2B32;
+    margin: 20px 0 0 0;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
-
+h4{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 50px 0 50px 0;
+}
+.faq details div{
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 0;
+    background-color: #899CA0;
+    border-radius: 15px;
+    padding: 20px;
+    color: #FFF;
+}
+.faq details summary{
+    font-size: 12px;
+    line-height: 50px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.faq details[open] summary{
+    background-color: #FFF;
+    color: #1C2B32;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+footer{
+    background-color: #1C2B32;
+    color: #FFFFFF;
+    height: 70px;
+}
+footer p{
+    font-size: 12px;
+    text-align: center;
+    padding: 25px 0 0 0;
+}

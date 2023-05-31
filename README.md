@@ -50,7 +50,7 @@ Zoals je kunt zien staat er een mooie afbeelding in de header. Maar we gaan je a
 - [ ] Voorzie de button van styling zodat deze er zo uitziet als het voorbeeld. Check of alles er nogsteeds goed uitziet als je de buttontekst ineens heel lang maakt.
 
 ### 1.4 Veelgestelde vragen
-![Uitklap vragen](./assets/examples/uitklap-vragen.gif)
+![Uitklap vragen](assets/examples/uitklap-vragen.gif)
 
 - [ ] De veelgestelde vragen kunnen worden uitgeklapt! Hier gebruiken we het speciale `<details>`-element voor, wat het in- en uitklappen voor ons regelt. Bekijk [hier](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) hoe je deze kunt gebruiken;
 - [ ] Gebruik de juiste styling om de vragen er net zo uit te laten zien als in het voorbeeld;
